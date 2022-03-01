@@ -3,7 +3,7 @@
 This repository provides datasets and code for preprocessing, training and testing models for Iterative Text Revision with the official Hugging Face implementation of the following paper:
 
 > [Understanding Iterative Revision from Human-Written Text](URL) <br>
-> [Wanyu Du](https://github.com/<>), [Vipul Raheja](https://github.com/vipulraheja), [Dhruv Kumar](https://github.com/<>), [Zae Myung Kim](https://github.com/<>), [Melissa Lopez]() and [Dongyeop Kang]() <br>
+> [Wanyu Du](https://github.com/wyu-du), [Vipul Raheja](https://github.com/vipulraheja), [Dhruv Kumar](https://github.com/ddhruvkr), [Zae Myung Kim](https://github.com/zaemyung), [Melissa Lopez]() and [Dongyeop Kang](https://github.com/dykang) <br>
 > [ACL 2022]() <br>
 
 It is mainly based on Hugging Face Transformers.
