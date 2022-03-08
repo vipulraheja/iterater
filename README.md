@@ -31,6 +31,12 @@ If you find this work useful for your research, please cite our paper:
 
 #### Understanding Iterative Revision from Human-Written Text
 ```
-@inproceedings{}
+@inproceedings{du2022iterater,
+    title = "Understanding Iterative Revision from Human-Written Text",
+    author = "Du, Wanyu and Raheja, Vipul and Kumar, Dhruv and Kim, Zae Myung and Lopez, Melissa and Kang, Dongyeop",
+    booktitle = "Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics",
+    year = "2022",
+    publisher = "Association for Computational Linguistics",
+}
 ```
 
