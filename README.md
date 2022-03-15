@@ -30,8 +30,15 @@ tokenizer = AutoTokenizer.from_pretrained("wanyu/IteraTeR-PEGASUS")
 model = AutoModelForSeq2SeqLM.from_pretrained("wanyu/IteraTeR-PEGASUS")
 ```
 
-We also provided a [demo code](https://colab.research.google.com/drive/1qv7b2jJSqqMaYOQ5NRvAvoyDB3gvpwcp?usp=sharing) for how to use them to do iterative text revision.
+We also provided a [demo code](https://colab.research.google.com/drive/1qv7b2jJSqqMaYOQ5NRvAvoyDB3gvpwcp?usp=sharing) for how to use them to do iterative text revision. 
 
+You can change the following data and model specifications:
+- <a target="_blank" href="https://huggingface.co/datasets/wanyu/IteraTeR_human_sent">"wanyu/IteraTeR_human_sent"</a>: sentence-level IteraTeR-HUMAN dataset;
+- <a target="_blank" href="https://huggingface.co/datasets/wanyu/IteraTeR_human_doc">"wanyu/IteraTeR_human_doc"</a>: document-level IteraTeR-HUMAN dataset;
+- <a target="_blank" href="https://huggingface.co/datasets/wanyu/IteraTeR_full_sent">"wanyu/IteraTeR_full_sent"</a>: sentence-level IteraTeR-FULL dataset;
+- <a target="_blank" href="https://huggingface.co/datasets/wanyu/IteraTeR_full_doc">"wanyu/IteraTeR_full_doc"</a>: document-level IteraTeR-FULL dataset;
+- <a target="_blank" href="https://huggingface.co/wanyu/IteraTeR-PEGASUS">"wanyu/IteraTeR-PEGASUS"</a>: PEGASUS model fine-tuned on sentence-level IteraTeR-FULL dataset;
+- <a target="_blank" href="https://huggingface.co/wanyu/IteraTeR-BART">"wanyu/IteraTeR-BART"</a>: BART model fine-tuned on sentence-level IteraTeR-FULL dataset;
 
 
 ## Datasets
@@ -82,8 +89,8 @@ Code for collecting the revision history data can be found under [code/crawler/]
 
 | Model         | Dataset        |  SARI  |  BLEU  | ROUGE-L|  Avg.  |
 | :-------------|:-------------  | :-----:| :-----:| :-----:| :-----:|
-| [BART]()      | IteraTeR-FULL  | 37.28  | 77.50  | 86.14  | 66.97  |
-| [PEGASUS]()   | IteraTeR-FULL  | 37.11  | 77.60  | 86.84  | 67.18  |
+| [BART](https://huggingface.co/wanyu/IteraTeR-BART)      | IteraTeR-FULL  | 37.28  | 77.50  | 86.14  | 66.97  |
+| [PEGASUS](https://huggingface.co/wanyu/IteraTeR-PEGASUS)   | IteraTeR-FULL  | 37.11  | 77.60  | 86.84  | 67.18  |
 
 
 ### Train model
