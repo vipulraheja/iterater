@@ -18,7 +18,7 @@ The project was tested using Python 3.7.
 
 
 ## HuggingFace Integration
-We uploaded both our datasets and model checkpoints to Hugging Face. You can directly load our data using `datasets` and load our model using `transformers`.
+We uploaded both our datasets and model checkpoints to Hugging Face's [repo](https://huggingface.co/wanyu). You can directly load our data using `datasets` and load our model using `transformers`.
 ```python
 # load our dataset
 from datasets import load_dataset
@@ -26,22 +26,24 @@ dataset = load_dataset("wanyu/IteraTeR_human_sent")
 
 # load our model
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
-tokenizer = AutoTokenizer.from_pretrained("wanyu/IteraTeR-PEGASUS")
-model = AutoModelForSeq2SeqLM.from_pretrained("wanyu/IteraTeR-PEGASUS")
+tokenizer = AutoTokenizer.from_pretrained("wanyu/IteraTeR-PEGASUS-Revision-Generator")
+model = AutoModelForSeq2SeqLM.from_pretrained("wanyu/IteraTeR-PEGASUS-Revision-Generator")
 ```
-
-We also provided a [demo code](https://colab.research.google.com/drive/1qv7b2jJSqqMaYOQ5NRvAvoyDB3gvpwcp?usp=sharing) for how to use them to do iterative text revision. 
 
 You can change the following data and model specifications:
 - <a target="_blank" href="https://huggingface.co/datasets/wanyu/IteraTeR_human_sent">"wanyu/IteraTeR_human_sent"</a>: sentence-level IteraTeR-HUMAN dataset;
 - <a target="_blank" href="https://huggingface.co/datasets/wanyu/IteraTeR_human_doc">"wanyu/IteraTeR_human_doc"</a>: document-level IteraTeR-HUMAN dataset;
 - <a target="_blank" href="https://huggingface.co/datasets/wanyu/IteraTeR_full_sent">"wanyu/IteraTeR_full_sent"</a>: sentence-level IteraTeR-FULL dataset;
 - <a target="_blank" href="https://huggingface.co/datasets/wanyu/IteraTeR_full_doc">"wanyu/IteraTeR_full_doc"</a>: document-level IteraTeR-FULL dataset;
-- <a target="_blank" href="https://huggingface.co/wanyu/IteraTeR-PEGASUS">"wanyu/IteraTeR-PEGASUS"</a>: PEGASUS model fine-tuned on sentence-level IteraTeR-FULL dataset;
-- <a target="_blank" href="https://huggingface.co/wanyu/IteraTeR-BART">"wanyu/IteraTeR-BART"</a>: BART model fine-tuned on sentence-level IteraTeR-FULL dataset;
+- <a target="_blank" href="https://huggingface.co/wanyu/IteraTeR-PEGASUS-Revision-Generator">"wanyu/IteraTeR-PEGASUS-Revision-Generator"</a>: PEGASUS model fine-tuned on sentence-level IteraTeR-FULL dataset, see usage example [here](https://huggingface.co/wanyu/IteraTeR-PEGASUS-Revision-Generator#usage);
+- <a target="_blank" href="https://huggingface.co/wanyu/IteraTeR-BART-Revision-Generator">"wanyu/IteraTeR-BART-Revision-Generator"</a>: BART model fine-tuned on sentence-level IteraTeR-FULL dataset, see usage example [here](https://huggingface.co/wanyu/IteraTeR-BART-Revision-Generator#usage);
+
+We also provided a [demo code](https://colab.research.google.com/drive/1qv7b2jJSqqMaYOQ5NRvAvoyDB3gvpwcp?usp=sharing) for how to use them to do iterative text revision. 
 
 
 ## Datasets
+You can load our dataset using Hugging Face's `datasets`, and you can also download the raw data in [datasets/](https://github.com/vipulraheja/IteraTeR/tree/main/dataset). <br>
+We splited IteraTeR dataset as follows:
 <table>
 	<tr>
 		<th></th>
@@ -77,8 +79,7 @@ You can change the following data and model specifications:
 	</tr>
 </table>
 
-All data and detailed description for the data structure can be found under [datasets/](https://github.com/vipulraheja/IteraTeR/tree/main/dataset). 
-
+All data and detailed description for the data structure can be found under [datasets/](https://github.com/vipulraheja/IteraTeR/tree/main/dataset). <br>
 Code for collecting the revision history data can be found under [code/crawler/](https://github.com/vipulraheja/IteraTeR/tree/main/code/crawler). 
 
 
@@ -89,8 +90,8 @@ Code for collecting the revision history data can be found under [code/crawler/]
 
 | Model         | Dataset        |  SARI  |  BLEU  | ROUGE-L|  Avg.  |
 | :-------------|:-------------  | :-----:| :-----:| :-----:| :-----:|
-| [BART](https://huggingface.co/wanyu/IteraTeR-BART)      | IteraTeR-FULL  | 37.28  | 77.50  | 86.14  | 66.97  |
-| [PEGASUS](https://huggingface.co/wanyu/IteraTeR-PEGASUS)   | IteraTeR-FULL  | 37.11  | 77.60  | 86.84  | 67.18  |
+| [BART](https://huggingface.co/wanyu/IteraTeR-BART-Revision-Generator)      | IteraTeR-FULL  | 37.28  | 77.50  | 86.14  | 66.97  |
+| [PEGASUS](https://huggingface.co/wanyu/IteraTeR-PEGASUS-Revision-Generator)   | IteraTeR-FULL  | 37.11  | 77.60  | 86.84  | 67.18  |
 
 
 ### Train model
