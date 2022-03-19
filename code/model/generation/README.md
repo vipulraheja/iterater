@@ -13,3 +13,9 @@ python pegasus_inference_and_metrics.py --checkpoint MODEL_CHECKPOINT --referenc
 ```
 python bart_inference_and_metrics.py --checkpoint MODEL_CHECKPOINT --reference DATASET --output OUTPUT_LOCATION
 ```
+
+`checkpoint`: location of the trained model.
+
+`reference`: location of the reference dataset.
+
+`output`: location to save the model predictions and metrics.
