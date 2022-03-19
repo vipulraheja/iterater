@@ -21,3 +21,5 @@ python train_intent_classifier.py --epochs 15 --upsample_values 1 1 1 1 1 --weig
 ```
 python intent_classifier_inference.py --checkpoint MODEL_CHECKPOINT
 ```
+
+`checkpoint`: location of the trained model.
