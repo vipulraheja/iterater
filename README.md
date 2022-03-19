@@ -86,7 +86,25 @@ Code for collecting the revision history data can be found under [code/crawler/]
 
 ## Models
 
-### Model checkpoints
+### Intent classification model
+
+#### Model checkpoints
+
+| Model         | Dataset        |  Edit-Intention  |  Precision  | Recall |  F1  |
+| :-------------|:-------------  | :-----:| :-----:| :-----:| :-----:|
+| [Roberta](https://huggingface.co/wanyu/IteraTeR-ROBERTA-Intention-Classifier)      | IteraTeR-HUMAN  | Clarity  | 0.75  | 0.63  | 0.69  |
+| [Roberta](https://huggingface.co/wanyu/IteraTeR-ROBERTA-Intention-Classifier)    | IteraTeR-HUMAN  | Fluency  | 0.74  | 0.86  | 0.80  |
+| [Roberta](https://huggingface.co/wanyu/IteraTeR-ROBERTA-Intention-Classifier)    | IteraTeR-HUMAN  | Coherence  | 0.29 | 0.36 | 0.32 |
+| [Roberta](https://huggingface.co/wanyu/IteraTeR-ROBERTA-Intention-Classifier)    | IteraTeR-HUMAN  | Style  | 1.00 | 0.07 | 0.13  |
+| [Roberta](https://huggingface.co/wanyu/IteraTeR-ROBERTA-Intention-Classifier)    | IteraTeR-HUMAN  | Meaning-changed  | 0.44 | 0.69 | 0.53  |
+
+#### Model training and inference
+The code and instructions for the training and inference of the intent classificatier model can be found under [intent_classification/](https://github.com/vipulraheja/IteraTeR/tree/main/code/model/intent_classification).
+
+
+### Generation models
+
+#### Model checkpoints
 
 | Model         | Dataset        |  SARI  |  BLEU  | ROUGE-L|  Avg.  |
 | :-------------|:-------------  | :-----:| :-----:| :-----:| :-----:|
@@ -94,18 +112,8 @@ Code for collecting the revision history data can be found under [code/crawler/]
 | [PEGASUS](https://huggingface.co/wanyu/IteraTeR-PEGASUS-Revision-Generator)   | IteraTeR-FULL  | 37.11  | 77.60  | 86.84  | 67.18  |
 
 
-### Train model
-To train your model, simply run:
-```
-bash train.sh
-```
-
-
-### Model inference
-To run your model on the test set, use the following command:
-```
-bash generate.sh
-```
+#### Model training and inference
+The code and instructions for the training and inference of the Pegasus and BART models can be found under [generation/](https://github.com/vipulraheja/IteraTeR/tree/main/code/model/generation).
 
 
 ## Citation
