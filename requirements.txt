@@ -10,6 +10,5 @@ google
 protobuf
 absl-py
 rouge_score
-sacrebleu
 wandb
 sacrebleu==1.5.1

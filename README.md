@@ -99,7 +99,7 @@ Code for collecting the revision history data can be found under [code/crawler/]
 | [Roberta](https://huggingface.co/wanyu/IteraTeR-ROBERTA-Intention-Classifier)    | IteraTeR-HUMAN  | Meaning-changed  | 0.44 | 0.69 | 0.53  |
 
 #### Model training and inference
-The code and instructions for the training and inference of the intent classifier model can be found under [intent_classification/](https://github.com/vipulraheja/IteraTeR/tree/main/code/model/intent_classification).
+The code and instructions for the training and inference of the intent classifier model can be found under [code/model/intent_classification/](https://github.com/vipulraheja/IteraTeR/tree/main/code/model/intent_classification).
 
 
 ### Generation models
@@ -113,7 +113,7 @@ The code and instructions for the training and inference of the intent classifie
 
 
 #### Model training and inference
-The code and instructions for the training and inference of the Pegasus and BART models can be found under [generation/](https://github.com/vipulraheja/IteraTeR/tree/main/code/model/generation).
+The code and instructions for the training and inference of the Pegasus and BART models can be found under [code/model/generation/](https://github.com/vipulraheja/IteraTeR/tree/main/code/model/generation).
 
 
 ## Citation
