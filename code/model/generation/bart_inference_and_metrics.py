@@ -49,7 +49,6 @@ def main(args):
 
     metric_rouge = load_metric("rouge")
     metric_bleu = load_metric("bleu")
-    metric_bleurt = load_metric("bleurt", 'bleurt-base-128')
 
     # Compute Metrics
     # BLEU
@@ -65,12 +64,6 @@ def main(args):
     # Extract a few results from ROUGE
     rouge_result = {key: value.mid.fmeasure * 100 for key, value in rouge_scores.items()}
     print('ROUGE     :', rouge_result)
-
-    # BLEURT
-    bleurt_scores = metric_bleurt.compute(predictions=preds, references=refs)
-    bleurt_result = [round(v, 2) for v in bleurt_scores["scores"]]
-    assert type(bleurt_result) == list and len(bleurt_result) == len(refs)
-    print('BLEURT     :', np.mean(bleurt_result))
 
     # SARI
     sari_refs = [[ref] for ref in refs]
@@ -95,7 +88,6 @@ def main(args):
                 "metrics": {
                     "BLEU": bleu_result['bleu'],
                     "ROUGE": rouge_result,
-                    "BLEURT": np.mean(bleurt_result),
                     "SARI": sari_score,
                     "KEEP": keep,
                     "ADD": add,
