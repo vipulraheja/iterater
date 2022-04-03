@@ -1,4 +1,6 @@
-# IteraTeR Dataset
+# Datasets
+
+## IteraTeR Dataset
 
 The IteraTeR dataset is splitted as follows:
 <table>
@@ -37,7 +39,7 @@ The IteraTeR dataset is splitted as follows:
 </table>
 
 
-## Document-level datasets
+### Document-level datasets
 For `Document-level` dataset, it has a document-level revision per line. Here is a sample of a document-level revision in `IteraTeR-HUMAN`:
 ```
 {
@@ -87,7 +89,7 @@ The document-level revision object contains the following keys:
 - `domain`: domain of the document.
 
 
-## Sentence-level datasets
+### Sentence-level datasets
 For `Sentence-level` dataset, it has a sentence-level revision per line. Here is a sample of a sentence-level revision in `IteraTeR-FULL`:
 ```
 {
@@ -110,6 +112,35 @@ The sentence-level revision object contains the following keys:
 - `revision_depth`: current revision depth for the document, starting from 1.
 
 
+
+## IteraTeR_v2 Dataset
+
+The `IteraTeR_v2` dataset is larger than IteraTeR with around *24K more
+unique documents* and *170K more edits*, which is splitted as follows:
+<table>
+	<tr>
+		<th></th>
+		<th>Train</th>
+		<th>Dev</th>
+		<th>Test</th>
+	</tr>
+	<tr>
+		<td>IteraTeR_v2</td>
+		<td>292929</td>
+		<td>34029</td>
+		<td>39511</td>
+	</tr>
+</table>
+
+The `IteraTeR_v2` dataset shares the same data structure as the sentence-level `IteraTeR-full` dataset.
+
+However, we also incoporate the context sentences into `before_sent_with_intent` for the `IteraTeR_v2` dataset with the following format:<br>
+`previous 2 context sentences <S> current sentence to be revised </S> following 2 context sentences`.
+
+Note that if the previous or following sentences do not exist, there will be just a whitespace.
+
+
+
 ## Code
 See [code/crawler/](https://github.com/vipulraheja/IteraTeR/tree/main/code/crawler) for the source code for collecting revision histories and extracting edits.
 
@@ -123,6 +154,18 @@ If you find this work useful for your research, please cite our paper:
     title = "Understanding Iterative Revision from Human-Written Text",
     author = "Du, Wanyu and Raheja, Vipul and Kumar, Dhruv and Kim, Zae Myung and Lopez, Melissa and Kang, Dongyeop",
     booktitle = "Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics",
+    year = "2022",
+    publisher = "Association for Computational Linguistics",
+}
+```
+
+
+#### Read, Revise, Repeat: A System Demonstration for Human-in-the-loop Iterative Text Revision
+```
+@inproceedings{du2022r3,
+    title = "Read, Revise, Repeat: A System Demonstration for Human-in-the-loop Iterative Text Revision",
+    author = "Du, Wanyu and Raheja, Vipul and Kumar, Dhruv and Kim, Zae Myung and Kang, Dongyeop",
+    booktitle = "Proceedings of the First Workshop on Intelligent and Interactive Writing Assistants",
     year = "2022",
     publisher = "Association for Computational Linguistics",
 }
