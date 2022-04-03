@@ -140,6 +140,8 @@ However, we also incoporate the context sentences into `before_sent_with_intent`
 Note that if the previous or following sentences do not exist, there will be just a whitespace.
 
 
+**Human-model interaction data in R3**: we also provide our collected human-model interaction data in R3 [here](https://github.com/vipulraheja/IteraTeR/tree/main/dataset/R3_eval_data.zip).
+
 
 ## Code
 See [code/crawler/](https://github.com/vipulraheja/IteraTeR/tree/main/code/crawler) for the source code for collecting revision histories and extracting edits.
