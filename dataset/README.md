@@ -115,7 +115,7 @@ The sentence-level revision object contains the following keys:
 
 ## IteraTeR_v2 Dataset
 
-The `IteraTeR_v2` dataset is larger than IteraTeR with around *24K more
+The `IteraTeR_v2` dataset is larger than `IteraTeR` with around *24K more
 unique documents* and *170K more edits*, which is splitted as follows:
 <table>
 	<tr>
@@ -140,7 +140,7 @@ However, we also incoporate the context sentences into `before_sent_with_intent`
 Note that if the previous or following sentences do not exist, there will be just a whitespace.
 
 
-**Human-model interaction data in R3**: we also provide our collected human-model interaction data in R3 [here](https://github.com/vipulraheja/IteraTeR/tree/main/dataset/R3_eval_data.zip).
+**Human-model interaction data in R3**: we also provide our collected human-model interaction data in R3 in [dataset/R3_eval_data.zip](https://github.com/vipulraheja/IteraTeR/tree/main/dataset/R3_eval_data.zip).
 
 
 ## Code
@@ -166,7 +166,7 @@ If you find this work useful for your research, please cite our paper:
 ```
 @inproceedings{du2022r3,
     title = "Read, Revise, Repeat: A System Demonstration for Human-in-the-loop Iterative Text Revision",
-    author = "Du, Wanyu and Raheja, Vipul and Kumar, Dhruv and Kim, Zae Myung and Kang, Dongyeop",
+    author = "*Du, Wanyu and *Kim, Zae Myung and Raheja, Vipul and Kumar, Dhruv and Kang, Dongyeop",
     booktitle = "Proceedings of the First Workshop on Intelligent and Interactive Writing Assistants",
     year = "2022",
     publisher = "Association for Computational Linguistics",

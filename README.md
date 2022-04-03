@@ -116,8 +116,37 @@ The code and instructions for the training and inference of the intent classifie
 The code and instructions for the training and inference of the Pegasus and BART models can be found under [code/model/generation/](https://github.com/vipulraheja/IteraTeR/tree/main/code/model/generation).
 
 
+
+## Human-in-the-loop Iterative Text Revision
+This repository also contains the code and data of the following paper:
+
+> [Understanding Iterative Revision from Human-Written Text]() <br>
+> [Wanyu Du<sup>1](https://github.com/wyu-du), [Zae Myung Kim<sup>1](https://github.com/zaemyung), [Vipul Raheja](https://github.com/vipulraheja), [Dhruv Kumar](https://github.com/ddhruvkr) and [Dongyeop Kang](https://github.com/dykang) <br>
+> [First Workshop on Intelligent and Interactive Writing Assistants (ACL 2022)](https://in2writing.glitch.me/) <br>
+
+
+The `IteraTeR_v2` dataset is larger than `IteraTeR` with around *24K more
+unique documents* and *170K more edits*, which is splitted as follows:
+<table>
+	<tr>
+		<th></th>
+		<th>Train</th>
+		<th>Dev</th>
+		<th>Test</th>
+	</tr>
+	<tr>
+		<td>IteraTeR_v2</td>
+		<td>292929</td>
+		<td>34029</td>
+		<td>39511</td>
+	</tr>
+</table>
+
+**Human-model interaction data in R3**: we also provide our collected human-model interaction data in R3 in [dataset/R3_eval_data.zip](https://github.com/vipulraheja/IteraTeR/tree/main/dataset/R3_eval_data.zip).
+
+
 ## Citation
-If you find this work useful for your research, please cite our paper:
+If you find this work useful for your research, please cite our papers:
 
 #### Understanding Iterative Revision from Human-Written Text
 ```
@@ -125,6 +154,18 @@ If you find this work useful for your research, please cite our paper:
     title = "Understanding Iterative Revision from Human-Written Text",
     author = "Du, Wanyu and Raheja, Vipul and Kumar, Dhruv and Kim, Zae Myung and Lopez, Melissa and Kang, Dongyeop",
     booktitle = "Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics",
+    year = "2022",
+    publisher = "Association for Computational Linguistics",
+}
+```
+
+
+#### Read, Revise, Repeat: A System Demonstration for Human-in-the-loop Iterative Text Revision
+```
+@inproceedings{du2022r3,
+    title = "Read, Revise, Repeat: A System Demonstration for Human-in-the-loop Iterative Text Revision",
+    author = "*Du, Wanyu and *Kim, Zae Myung and Raheja, Vipul and Kumar, Dhruv and Kang, Dongyeop",
+    booktitle = "Proceedings of the First Workshop on Intelligent and Interactive Writing Assistants",
     year = "2022",
     publisher = "Association for Computational Linguistics",
 }
