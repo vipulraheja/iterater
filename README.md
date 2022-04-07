@@ -6,11 +6,13 @@ This repository provides datasets and code for preprocessing, training and testi
 > [Wanyu Du](https://github.com/wyu-du), [Vipul Raheja](https://github.com/vipulraheja), [Dhruv Kumar](https://github.com/ddhruvkr), [Zae Myung Kim](https://github.com/zaemyung), [Melissa Lopez](https://github.com/mlsabthlpz) and [Dongyeop Kang](https://github.com/dykang) <br>
 > [ACL 2022](https://www.2022.aclweb.org/) <br>
 
-This repository also contains the code and data of the following paper:
+This repository also contains the code and data of the following demo paper:
 
-> [Understanding Iterative Revision from Human-Written Text]() <br>
+> [Read, Revise, Repeat: A System Demonstration for Human-in-the-loop Iterative Text Revision]() <br>
 > [Wanyu Du<sup>1](https://github.com/wyu-du), [Zae Myung Kim<sup>1](https://github.com/zaemyung), [Vipul Raheja](https://github.com/vipulraheja), [Dhruv Kumar](https://github.com/ddhruvkr) and [Dongyeop Kang](https://github.com/dykang) <br>
 > [First Workshop on Intelligent and Interactive Writing Assistants (ACL 2022)](https://in2writing.glitch.me/) <br>
+
+[![Read, Revie, Repeat (R3)](r3_demo_snapshot.jpg)](https://www.youtube.com/watch?v=lK08tIpEoaE)
 
 
 It is mainly based on HuggingFace's `transformers` libarary.
