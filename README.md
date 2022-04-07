@@ -12,10 +12,10 @@ This repository also contains the code and data of the following demo paper:
 > [Wanyu Du<sup>1](https://github.com/wyu-du), [Zae Myung Kim<sup>1](https://github.com/zaemyung), [Vipul Raheja](https://github.com/vipulraheja), [Dhruv Kumar](https://github.com/ddhruvkr) and [Dongyeop Kang](https://github.com/dykang) <br>
 > [First Workshop on Intelligent and Interactive Writing Assistants (ACL 2022)](https://in2writing.glitch.me/) <br>
 
-[![Read, Revie, Repeat (R3)](r3_demo_snapshot.jpg)](https://www.youtube.com/watch?v=lK08tIpEoaE)
+[<img src="r3_demo_snapshot.jpg" width="50%">](https://www.youtube.com/watch?v=lK08tIpEoaE)
 
 
-It is mainly based on HuggingFace's `transformers` libarary.
+Our code is mainly based on HuggingFace's `transformers` libarary.
 
 
 ## Installation
