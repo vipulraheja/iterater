@@ -8,7 +8,7 @@ This repository provides datasets and code for preprocessing, training and testi
 
 This repository also contains the code and data of the following demo paper:
 
-> [Read, Revise, Repeat: A System Demonstration for Human-in-the-loop Iterative Text Revision]() <br>
+> [Read, Revise, Repeat: A System Demonstration for Human-in-the-loop Iterative Text Revision](https://arxiv.org/abs/2204.03685) <br>
 > [Wanyu Du<sup>1](https://github.com/wyu-du), [Zae Myung Kim<sup>1](https://github.com/zaemyung), [Vipul Raheja](https://github.com/vipulraheja), [Dhruv Kumar](https://github.com/ddhruvkr) and [Dongyeop Kang](https://github.com/dykang) <br>
 > [First Workshop on Intelligent and Interactive Writing Assistants (ACL 2022)](https://in2writing.glitch.me/) <br>
 
