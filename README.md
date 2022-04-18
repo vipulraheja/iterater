@@ -12,7 +12,7 @@ This repository also contains the code and data of the following demo paper:
 > [Wanyu Du<sup>1](https://github.com/wyu-du), [Zae Myung Kim<sup>1](https://github.com/zaemyung), [Vipul Raheja](https://github.com/vipulraheja), [Dhruv Kumar](https://github.com/ddhruvkr) and [Dongyeop Kang](https://github.com/dykang) <br>
 > [First Workshop on Intelligent and Interactive Writing Assistants (ACL 2022)](https://in2writing.glitch.me/) <br>
 
-[<img src="r3_demo_snapshot.jpg" width="50%">](https://www.youtube.com/watch?v=lK08tIpEoaE)
+[<img src="https://yt-embed.herokuapp.com/embed?v=lK08tIpEoaE" width="50%">](https://www.youtube.com/watch?v=lK08tIpEoaE)
 
 
 Our code is mainly based on HuggingFace's `transformers` libarary.
@@ -44,10 +44,14 @@ You can change the following data and model specifications:
 - <a target="_blank" href="https://huggingface.co/datasets/wanyu/IteraTeR_human_doc">"wanyu/IteraTeR_human_doc"</a>: document-level IteraTeR-HUMAN dataset;
 - <a target="_blank" href="https://huggingface.co/datasets/wanyu/IteraTeR_full_sent">"wanyu/IteraTeR_full_sent"</a>: sentence-level IteraTeR-FULL dataset;
 - <a target="_blank" href="https://huggingface.co/datasets/wanyu/IteraTeR_full_doc">"wanyu/IteraTeR_full_doc"</a>: document-level IteraTeR-FULL dataset;
+- <a target="_blank" href="https://huggingface.co/datasets/wanyu/IteraTeR_v2">"wanyu/IteraTeR_v2"</a>: sentence-level IteraTeR_v2 dataset;
 - <a target="_blank" href="https://huggingface.co/wanyu/IteraTeR-PEGASUS-Revision-Generator">"wanyu/IteraTeR-PEGASUS-Revision-Generator"</a>: PEGASUS model fine-tuned on sentence-level IteraTeR-FULL dataset, see usage example [here](https://huggingface.co/wanyu/IteraTeR-PEGASUS-Revision-Generator#usage);
 - <a target="_blank" href="https://huggingface.co/wanyu/IteraTeR-BART-Revision-Generator">"wanyu/IteraTeR-BART-Revision-Generator"</a>: BART model fine-tuned on sentence-level IteraTeR-FULL dataset, see usage example [here](https://huggingface.co/wanyu/IteraTeR-BART-Revision-Generator#usage);
 
-We also provided a [demo code](https://colab.research.google.com/drive/1qv7b2jJSqqMaYOQ5NRvAvoyDB3gvpwcp?usp=sharing) for how to use them to do iterative text revision. 
+
+[![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1qv7b2jJSqqMaYOQ5NRvAvoyDB3gvpwcp?usp=sharing)<br>
+We also provided a simple [demo code](https://colab.research.google.com/drive/1qv7b2jJSqqMaYOQ5NRvAvoyDB3gvpwcp?usp=sharing) for how to use them to do iterative text revision. 
+
 
 
 ## Datasets
@@ -101,11 +105,11 @@ Code for collecting the revision history data can be found under [code/crawler/]
 
 | Model         | Dataset        |  Edit-Intention  |  Precision  | Recall |  F1  |
 | :-------------|:-------------  | :-----:| :-----:| :-----:| :-----:|
-| [Roberta](https://huggingface.co/wanyu/IteraTeR-ROBERTA-Intention-Classifier)      | IteraTeR-HUMAN  | Clarity  | 0.75  | 0.63  | 0.69  |
-| [Roberta](https://huggingface.co/wanyu/IteraTeR-ROBERTA-Intention-Classifier)    | IteraTeR-HUMAN  | Fluency  | 0.74  | 0.86  | 0.80  |
-| [Roberta](https://huggingface.co/wanyu/IteraTeR-ROBERTA-Intention-Classifier)    | IteraTeR-HUMAN  | Coherence  | 0.29 | 0.36 | 0.32 |
-| [Roberta](https://huggingface.co/wanyu/IteraTeR-ROBERTA-Intention-Classifier)    | IteraTeR-HUMAN  | Style  | 1.00 | 0.07 | 0.13  |
-| [Roberta](https://huggingface.co/wanyu/IteraTeR-ROBERTA-Intention-Classifier)    | IteraTeR-HUMAN  | Meaning-changed  | 0.44 | 0.69 | 0.53  |
+| [RoBERTa](https://huggingface.co/wanyu/IteraTeR-ROBERTA-Intention-Classifier)      | IteraTeR-HUMAN  | Clarity  | 0.75  | 0.63  | 0.69  |
+| [RoBERTa](https://huggingface.co/wanyu/IteraTeR-ROBERTA-Intention-Classifier)    | IteraTeR-HUMAN  | Fluency  | 0.74  | 0.86  | 0.80  |
+| [RoBERTa](https://huggingface.co/wanyu/IteraTeR-ROBERTA-Intention-Classifier)    | IteraTeR-HUMAN  | Coherence  | 0.29 | 0.36 | 0.32 |
+| [RoBERTa](https://huggingface.co/wanyu/IteraTeR-ROBERTA-Intention-Classifier)    | IteraTeR-HUMAN  | Style  | 1.00 | 0.07 | 0.13  |
+| [RoBERTa](https://huggingface.co/wanyu/IteraTeR-ROBERTA-Intention-Classifier)    | IteraTeR-HUMAN  | Meaning-changed  | 0.44 | 0.69 | 0.53  |
 
 #### Model training and inference
 The code and instructions for the training and inference of the intent classifier model can be found under [code/model/intent_classification/](https://github.com/vipulraheja/IteraTeR/tree/main/code/model/intent_classification).
