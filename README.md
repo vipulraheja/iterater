@@ -131,7 +131,7 @@ The code and instructions for the training and inference of the Pegasus and BART
 
 
 ## Human-in-the-loop Iterative Text Revision
-This repository also contains the code and data of the [Understanding Iterative Revision from Human-Written Text]().
+This repository also contains the code and data of the [Read, Revise, Repeat: A System Demonstration for Human-in-the-loop Iterative Text Revision](https://arxiv.org/abs/2204.03685).<br>
 The `IteraTeR_v2` dataset is larger than `IteraTeR` with around *24K more
 unique documents* and *170K more edits*, which is splitted as follows:
 <table>
