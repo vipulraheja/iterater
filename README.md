@@ -6,13 +6,17 @@ This repository provides datasets and code for preprocessing, training and testi
 > [Wanyu Du](https://github.com/wyu-du), [Vipul Raheja](https://github.com/vipulraheja), [Dhruv Kumar](https://github.com/ddhruvkr), [Zae Myung Kim](https://github.com/zaemyung), [Melissa Lopez](https://github.com/mlsabthlpz) and [Dongyeop Kang](https://github.com/dykang) <br>
 > [ACL 2022](https://www.2022.aclweb.org/) <br>
 
+[<img src="https://yt-embed.herokuapp.com/embed?v=peRc2SE31OQ" width="50%">](https://www.youtube.com/watch?v=peRc2SE31OQ)
+
+
 This repository also contains the code and data of the following demo paper:
 
 > [Read, Revise, Repeat: A System Demonstration for Human-in-the-loop Iterative Text Revision](https://arxiv.org/abs/2204.03685) <br>
 > [Wanyu Du<sup>1](https://github.com/wyu-du), [Zae Myung Kim<sup>1](https://github.com/zaemyung), [Vipul Raheja](https://github.com/vipulraheja), [Dhruv Kumar](https://github.com/ddhruvkr) and [Dongyeop Kang](https://github.com/dykang) <br>
 > [First Workshop on Intelligent and Interactive Writing Assistants (ACL 2022)](https://in2writing.glitch.me/) <br>
 
-[<img src="https://yt-embed.herokuapp.com/embed?v=lK08tIpEoaE" width="50%">](https://www.youtube.com/watch?v=lK08tIpEoaE)
+[<img src="https://yt-embed.herokuapp.com/embed?v=myBJiAl2jcg" width="40%">](https://www.youtube.com/watch?v=myBJiAl2jcg)
+[<img src="https://yt-embed.herokuapp.com/embed?v=lK08tIpEoaE" width="40%">](https://www.youtube.com/watch?v=lK08tIpEoaE)
 
 
 Our code is mainly based on HuggingFace's `transformers` libarary.
