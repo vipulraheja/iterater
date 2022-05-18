@@ -161,24 +161,41 @@ If you find this work useful for your research, please cite our papers:
 
 #### Understanding Iterative Revision from Human-Written Text
 ```
-@inproceedings{du2022iterater,
+@inproceedings{du-etal-2022-understanding-iterative,
     title = "Understanding Iterative Revision from Human-Written Text",
-    author = "Du, Wanyu and Raheja, Vipul and Kumar, Dhruv and Kim, Zae Myung and Lopez, Melissa and Kang, Dongyeop",
-    booktitle = "Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics",
+    author = "Du, Wanyu  and
+      Raheja, Vipul  and
+      Kumar, Dhruv  and
+      Kim, Zae Myung  and
+      Lopez, Melissa  and
+      Kang, Dongyeop",
+    booktitle = "Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = may,
     year = "2022",
+    address = "Dublin, Ireland",
     publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.acl-long.250",
+    pages = "3573--3590"
 }
 ```
 
 
 #### Read, Revise, Repeat: A System Demonstration for Human-in-the-loop Iterative Text Revision
 ```
-@inproceedings{du2022r3,
+@inproceedings{du-etal-2022-read,
     title = "Read, Revise, Repeat: A System Demonstration for Human-in-the-loop Iterative Text Revision",
-    author = "*Du, Wanyu and *Kim, Zae Myung and Raheja, Vipul and Kumar, Dhruv and Kang, Dongyeop",
-    booktitle = "Proceedings of the First Workshop on Intelligent and Interactive Writing Assistants",
+    author = "Du, Wanyu  and
+      Kim, Zae Myung  and
+      Raheja, Vipul  and
+      Kumar, Dhruv  and
+      Kang, Dongyeop",
+    booktitle = "Proceedings of the First Workshop on Intelligent and Interactive Writing Assistants (In2Writing 2022)",
+    month = may,
     year = "2022",
+    address = "Dublin, Ireland",
     publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.in2writing-1.14",
+    pages = "96--108"
 }
 ```
 
