@@ -15,8 +15,8 @@ This repository also contains the code and data of the following demo paper:
 > [Wanyu Du<sup>1](https://github.com/wyu-du), [Zae Myung Kim<sup>1](https://github.com/zaemyung), [Vipul Raheja](https://github.com/vipulraheja), [Dhruv Kumar](https://github.com/ddhruvkr) and [Dongyeop Kang](https://github.com/dykang) <br>
 > [First Workshop on Intelligent and Interactive Writing Assistants (ACL 2022)](https://in2writing.glitch.me/) <br>
 
-[<img src="https://yt-embed.herokuapp.com/embed?v=myBJiAl2jcg" width="40%">](https://www.youtube.com/watch?v=myBJiAl2jcg)
-[<img src="https://yt-embed.herokuapp.com/embed?v=lK08tIpEoaE" width="40%">](https://www.youtube.com/watch?v=lK08tIpEoaE)
+[<img src="static/acl22iterater_blog.png" width="40%">](https://www.youtube.com/watch?v=myBJiAl2jcg)
+[<img src="static/acl22r3_blog.png" width="40%">](https://www.youtube.com/watch?v=lK08tIpEoaE)
 
 
 Our code is mainly based on HuggingFace's `transformers` libarary.
@@ -196,6 +196,25 @@ If you find this work useful for your research, please cite our papers:
     publisher = "Association for Computational Linguistics",
     url = "https://aclanthology.org/2022.in2writing-1.14",
     pages = "96--108"
+}
+```
+
+#### Improving Iterative Text Revision by Learning Where to Edit from Other Revision Tasks
+```
+@inproceedings{kim-etal-2022-improving,
+    title = "Improving Iterative Text Revision by Learning Where to Edit from Other Revision Tasks",
+    author = "Kim, Zae Myung  and
+      Du, Wanyu  and
+      Raheja, Vipul  and
+      Kumar, Dhruv  and
+      Kang, Dongyeop",
+    booktitle = "Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing",
+    month = dec,
+    year = "2022",
+    address = "Abu Dhabi, United Arab Emirates",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.emnlp-main.678",
+    pages = "9986--9999",
 }
 ```
 
