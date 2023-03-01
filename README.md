@@ -6,8 +6,7 @@ This repository provides datasets and code for preprocessing, training and testi
 > [Wanyu Du](https://github.com/wyu-du), [Vipul Raheja](https://github.com/vipulraheja), [Dhruv Kumar](https://github.com/ddhruvkr), [Zae Myung Kim](https://github.com/zaemyung), [Melissa Lopez](https://github.com/mlsabthlpz) and [Dongyeop Kang](https://github.com/dykang) <br>
 > [ACL 2022](https://www.2022.aclweb.org/) <br>
 
-[<img src="https://yt-embed.herokuapp.com/embed?v=peRc2SE31OQ" width="50%">](https://www.youtube.com/watch?v=peRc2SE31OQ)
-
+[<img src="https://img.youtube.com/vi/peRc2SE31OQ/hqdefault.jpg" width="50%">](https://www.youtube.com/watch?v=peRc2SE31OQ)
 
 This repository also contains the code and data of the following demo paper:
 
@@ -15,8 +14,8 @@ This repository also contains the code and data of the following demo paper:
 > [Wanyu Du<sup>1](https://github.com/wyu-du), [Zae Myung Kim<sup>1](https://github.com/zaemyung), [Vipul Raheja](https://github.com/vipulraheja), [Dhruv Kumar](https://github.com/ddhruvkr) and [Dongyeop Kang](https://github.com/dykang) <br>
 > [First Workshop on Intelligent and Interactive Writing Assistants (ACL 2022)](https://in2writing.glitch.me/) <br>
 
-[<img src="static/acl22iterater_blog.png" width="40%">](https://www.youtube.com/watch?v=myBJiAl2jcg)
-[<img src="static/acl22r3_blog.png" width="40%">](https://www.youtube.com/watch?v=lK08tIpEoaE)
+[<img src="https://img.youtube.com/vi/myBJiAl2jcg/hqdefault.jpg" width="50%">](https://www.youtube.com/watch?v=myBJiAl2jcg)
+[<img src="https://img.youtube.com/vi/lK08tIpEoaE/hqdefault.jpg" width="50%">](https://www.youtube.com/watch?v=lK08tIpEoaE)
 
 
 Our code is mainly based on HuggingFace's `transformers` libarary.
