@@ -18,7 +18,7 @@ This repository also contains the code and data of the following demo paper:
 [<img src="https://img.youtube.com/vi/lK08tIpEoaE/hqdefault.jpg" width="20%">](https://www.youtube.com/watch?v=lK08tIpEoaE)
 
 
-Our code is mainly based on HuggingFace's `transformers` libarary.
+Our code is mainly based on Hugging Face's `transformers` libarary.
 
 
 ## Installation
@@ -29,7 +29,7 @@ pip install -r requirements.txt
 The project was tested using Python 3.7.
 
 
-## HuggingFace Integration
+## Hugging Face Integration
 We uploaded both our datasets and model checkpoints to Hugging Face's [repo](https://huggingface.co/wanyu). You can directly load our data using `datasets` and load our model using `transformers`.
 ```python
 # load our dataset
