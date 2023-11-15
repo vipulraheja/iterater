@@ -1,0 +1,8 @@
+arxiv==0.5.3
+mwparserfromhell
+pylatexenc
+nltk
+pandas
+numpy
+argparse
+sentsplit
